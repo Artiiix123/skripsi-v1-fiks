@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>About - UpConstruction Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.124/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.124/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-t2iLTPL1cDjQHLpPTrN7joI2kMMuUv59Pi/e+uwWwaCBuZy0e1hviMl8H6kI5BiI" crossorigin="anonymous">
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-pkRz+gW3ux/Ohy9Ym62/HVVFZNEw4aShC12w7VpG2msKRSAmIB7xrvXflfC05hni" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/leaflet.css">
+  <link rel="stylesheet" href="css/L.Control.Layers.Tree.css">
+  <link rel="stylesheet" href="css/qgis2web.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+</head>
+
+<body class="about-page">
+
+  <div id="map">
+  </div>
+  <script src="js/qgis2web_expressions.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/L.Control.Layers.Tree.min.js"></script>
+  <script src="js/multi-style-layer.js"></script>
+  <script src="js/leaflet.rotatedMarker.js"></script>
+  <script src="js/leaflet.pattern.js"></script>
+  <script src="js/leaflet-hash.js"></script>
+  <script src="js/Autolinker.min.js"></script>
+  <script src="js/rbush.min.js"></script>
+  <script src="js/labelgun.min.js"></script>
+  <script src="js/labels.js"></script>
+  <script src="data/Wilayah_Jogja_Line_49S_1.js"></script>
+  <script src="data/Reprojected_2.js"></script>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">SimBata</h1> <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="sebaran_jembatan.html">Sebaran Jembatan</a></li>
+          <li><a href="jembatan_Tes_Sijantan.html">Jembatan</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
+      <div class="container position-relative">
+        <h1>Jembatan Baru UGM</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="jembatan_Tes_Sijantan.html">Sebaran Jembatan</a></li>
+            <li class="current">PROF.IR.KRMT. WREKSODININGRAT</li>
+          </ol>
+        </nav>
+      </div>
+    </div><section id="info" class="info section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title">
+              <h2>Inforasi Jembatan PROF.IR.KRMT. WREKSODININGRAT</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row gy-4 align-items-center"  style="margin-top: -47px;">
+            <div class="col-lg-6 aos t aos-animate" data-aos="fade-up" data-aos-delay="300">
+              <div class="table-container">
+                <table class="info-table">
+                  <tr>
+                    <th>Nama Ruas Jalan</th>
+                    <td>1 - BOGEM - NGASEM</td>
+                  </tr>
+                  <tr>
+                    <th>No. Jembatan</th>
+                    <td>KB.34.0004.0001.001</td>
+                  </tr>
+                  <tr>
+                    <th>Nama Jembatan</th>
+                    <td>KLURAK</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="col-lg-6 aos t aos-animate" data-aos="fade-up" data-aos-delay="300">
+              <div class="table-container">
+                <table class="info-table">
+                  <tr>
+                    <th>Keluarahan</th>
+                    <td>xxx</td>
+                  </tr>
+                  <tr>
+                    <th>Kecamatan</th>
+                    <td>xxx</td>
+                  </tr>
+                  <tr>
+                    <th>Koodinat</th>
+                    <td>KLURAK</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row" style="margin-top: 45px;">
+            <div class="col-12">
+              <div class="section-title">
+                <h2>Visualisasi 3D Jembatan</h2>
+              </div>
+            </div>
+          </div>
+          
+          <div id="controls" style="position: relative; z-index: 10; background: #f8f9fa; padding: 10px; border-radius: 5px; margin-top: -30px; margin-bottom: 15px; border: 1px solid #dee2e6;">
+            <div>
+              <label><b>Pilihan Fitur Irisan Model :</b></label>
+              <input type="radio" id="clipZ" name="clipDirection" value="z" checked>
+              <label for="clipZ" style="margin-right: 15px;">Vertikal (Atas-Bawah)</label>
+              <input type="radio" id="clipX" name="clipDirection" value="x">
+              <label for="clipX">Horizontal (Samping)</label>
+            </div>
+            <div style="margin-top: 5px;">
+              <label for="clippingSlider"><b>Geser untuk Memotong:</b></label>
+              <input type="range" min="-50" max="50" step="0.5" value="50" id="clippingSlider" style="width: 100%;">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div id="cesiumContainer" style="width: 100%; height: 500px; border: 1px solid #dee2e6;"></div>
+              <script type="module">
+              // Menggunakan token akses dari akun Anda.
+              Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIzZTNhMThkYy0zZTg1LTQzYTUtYTNkNC00M2E1MDBiMDEyNzMiLCJpZCI6MjU0NDUxLCJpYXQiOjE3NTI0NjY4Njd9.iavipLwnduBrehICYAiIEdZw6vWSHbzxjeHzFJlbilA';
+
+              // Inisialisasi Cesium Viewer.
+              const viewer = new Cesium.Viewer('cesiumContainer', {
+                timeline: false,
+                animation: false,
+                sceneModePicker: false,
+                baseLayerPicker: false,
+              });
+
+              // Fungsi utama untuk memuat semua aset.
+              async function setupScene() {
+                try {
+                  const googleTileset = await Cesium.createGooglePhotorealistic3DTileset();
+                  viewer.scene.primitives.add(googleTileset);
+                } catch (error) {
+                  console.error(`Gagal memuat latar belakang Google 3D Tiles: ${error}`);
+                }
+
+                try {
+                  const yourModelTileset = await Cesium.Cesium3DTileset.fromIonAssetId(3539154);
+                  viewer.scene.primitives.add(yourModelTileset);
+                  
+                  // --- KODE UNTUK FITUR POTONG MODEL ---
+
+                  // 1. Definisikan clipping plane.
+                  const clippingPlane = new Cesium.ClippingPlane(
+                    new Cesium.Cartesian3(0.0, 0.0, -1.0), 
+                    50.0 
+                  );
+
+                  // 2. Buat collection dan terapkan ke model.
+                  const clippingPlanes = new Cesium.ClippingPlaneCollection({
+                    planes: [clippingPlane],
+                    // #### PERUBAHAN DI SINI ####
+                    edgeWidth: 0.0, // Set ke 0.0 untuk menghilangkan garis tepi
+                    edgeColor: Cesium.Color.RED,
+                  });
+                  yourModelTileset.clippingPlanes = clippingPlanes;
+
+                  // 3. Buat slider menjadi interaktif.
+                  const slider = document.getElementById("clippingSlider");
+                  slider.addEventListener("input", function (event) {
+                    clippingPlane.distance = Number(event.target.value);
+                  });
+                  
+                  // 4. Tambahkan event listener untuk Radio Button.
+                  const directionRadios = document.querySelectorAll('input[name="clipDirection"]');
+                  directionRadios.forEach(radio => {
+                    radio.addEventListener('change', function(event) {
+                      const direction = event.target.value;
+                      if (direction === 'z') {
+                        clippingPlane.normal = new Cesium.Cartesian3(0.0, 0.0, -1.0);
+                      } else if (direction === 'x') {
+                        clippingPlane.normal = new Cesium.Cartesian3(-1.0, 0.0, 0.0);
+                      }
+                      slider.value = slider.max; 
+                      clippingPlane.distance = Number(slider.max);
+                    });
+                  });
+                  
+                  // --- AKHIR DARI KODE ---
+
+                  await viewer.zoomTo(yourModelTileset);
+
+                } catch (error) {
+                  console.error(`Gagal memuat model 3D Tileset Anda: ${error}`);
+                  alert("Gagal memuat model Anda. Pastikan ID Aset sudah benar, tipenya adalah '3D Tiles', dan statusnya 'Ready' di akun Cesium Ion Anda.");
+                }
+              }
+              
+              setupScene();
+              </script>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 60px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.6917063554595!2d110.37021514227573!3d-7.762229111729664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a585109e26179%3A0xec72ba40e1b6fec!2sPogung%20Bridge!5e1!3m2!1sen!2sid!4v1751955859348!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div>
+            <div class="row" style="margin-top: 60px;">
+              <div class="col-12">
+                <div class="section-title">
+                  <h2>Foto Jembatan</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row gy-4 align-items-center"  style="margin-top: -47px;">
+              <div class="col-lg-6 aos t aos-animate align-items-center" data-aos="fade-up" data-aos-delay="300" style="margin-top: 40px;">
+                <img src="assets/img/services.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6 aos t aos-animate align-items-center" data-aos="fade-up" data-aos-delay="300" style="margin-top: 40px;">
+                <img src="assets/img/services.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+      </div>
+    </section> 
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">ADJIS</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Fakultas Teknik, Universitas Gadjah Mada</p>
+            <p>Mlati, Sleman, DI Yogyakarta</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links ms-auto">
+          <h4>Tautan Penting</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sebaran_jembatan.html">Atlas Jembatan</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Fitur Utama</h4>
+          <ul>
+            <li><a href="jembatan_Tes_Sijantan.html">Visualisasi 3D</a></li>
+            <li><a href="jembatan_Tes_Sijantan.html">Potret Jembatan</a></li>
+            <li><a href="jembatan_Tes_Sijantan.html">Data Jembatan</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">ADJIS</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+<script>
+  // Initialize the map
+  var map = L.map('map').setView([-7.797068, 110.370529], 13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([-7.797068, 110.370529]).addTo(map)
+    .bindPopup('<b>Jembatan Contoh</b><br>Ini adalah lokasi contoh jembatan.')
+    .openPopup();
+</script>
+
+</html>

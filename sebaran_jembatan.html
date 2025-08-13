@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>About - UpConstruction Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      width: 100%;
+      height: 70vh; /* You can adjust this height */
+    }
+    
+    /* Custom styles for graduated cluster colors */
+    .marker-cluster-small {
+	    background-color: rgba(110, 204, 57, 0.6);
+    }
+    .marker-cluster-small div {
+	    background-color: rgba(110, 204, 57, 0.8);
+    }
+
+    .marker-cluster-medium {
+	    background-color: rgba(241, 211, 87, 0.6);
+    }
+    .marker-cluster-medium div {
+	    background-color: rgba(241, 211, 87, 0.8);
+    }
+
+    .marker-cluster-large {
+	    background-color: rgba(253, 156, 115, 0.6);
+    }
+    .marker-cluster-large div {
+	    background-color: rgba(253, 156, 115, 0.8);
+    }
+
+  </style>
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">SimBata</h1><span>.</span>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="sebaran_jembatan.html" class="active">Sebaran Jembatan</a></li>
+          <li><a href="jembatan_Tes_Sijantan.html">Jembatan</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
+      <div class="container position-relative">
+        <h1>Sebaran Jembatan</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li class="current">Sebaran Jembatan</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-12">
+            <div class="section-title">
+              <h2>Sebaran Jembatan</h2>
+              <p>Sebaran jembatan yang ada di Kota Yogyakarta</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+     <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">ADJIS</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Fakultas Teknik, Universitas Gadjah Mada</p>
+            <p>Mlati, Sleman, DI Yogyakarta</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links ms-auto">
+          <h4>Tautan Penting</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sebaran_jembatan.html">Atlas Jembatan</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Fitur Utama</h4>
+          <ul>
+            <li><a href="jembatan_Tes_Sijantan.html">Visualisasi 3D</a></li>
+            <li><a href="jembatan_Tes_Sijantan.html">Potret Jembatan</a></li>
+            <li><a href="jembatan_Tes_Sijantan.html">Data Jembatan</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">ADJIS</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/js/main.js"></script>
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+  <script>
+    // Map initialization 
+    var map = L.map('map').setView([-7.7, 110.38], 11);
+
+    // OSM layer
+    var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
+    osm.addTo(map);
+
+    /*==============================================
+            1. DEFINE GRADUATED STYLES & CLUSTERS
+    ================================================*/
+    
+    // 🎨 Function to set marker color based on a property
+    // Make sure your GeoJSON has a property called "kondisi_jembatan"
+    function getColor(condition) {
+        return condition === 'Baik' ? 'green' :
+               condition === 'Sedang' ? 'orange' :
+               condition === 'Rusak' ? 'red' :
+                                       'grey'; // Default color
+    }
+
+    // Create a Marker Cluster Group.
+    // We can customize the cluster icons here.
+    var markers = L.markerClusterGroup({
+        iconCreateFunction: function(cluster) {
+            var count = cluster.getChildCount();
+            var className = ' marker-cluster-';
+            if (count < 10) {
+                className += 'small';
+            } else if (count < 100) {
+                className += 'medium';
+            } else {
+                className += 'large';
+            }
+            return new L.DivIcon({ html: '<div><span>' + count + '</span></div>', className: 'marker-cluster' + className, iconSize: new L.Point(40, 40) });
+        }
+    });
+
+
+    /*==============================================
+            2. LOAD GEOJSON FILE
+    ================================================*/
+    fetch('assets/data/geonode__3404_5kb_pt_peta_jembatan_2021.json')
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        var geoJsonLayer = L.geoJSON(data, {
+          // This function styles each individual bridge point
+          pointToLayer: function(feature, latlng) {
+            return L.circleMarker(latlng, {
+                radius: 8,
+                fillColor: getColor(feature.properties.kondisi_jembatan), // 👈 ADJUST THIS PROPERTY NAME
+                color: "#000",
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 0.8
+            });
+          },
+
+          // This function binds the popups
+          onEachFeature: function(feature, layer) {
+            if (feature.properties) {
+              // Customize popup content here
+              let popupContent = `<strong>Nama:</strong> ${feature.properties.nama_jembatan || 'N/A'}<br>`;
+              popupContent += `<strong>Kondisi:</strong> ${feature.properties.kondisi_jembatan || 'N/A'}`;
+              layer.bindPopup(popupContent);
+            }
+          }
+        });
+        
+        // Add the GeoJSON layer to the cluster group
+        markers.addLayer(geoJsonLayer);
+        
+        // Add the cluster group to the map
+        map.addLayer(markers);
+      })
+      .catch(function(error) {
+          console.error('Error loading the GeoJSON file:', error);
+      });
+  </script>
+
+</body>
+</html>

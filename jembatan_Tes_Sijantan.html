@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Services - UpConstruction Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/leaflet.css">
+  <link rel="stylesheet" href="css/L.Control.Layers.Tree.css">
+  <link rel="stylesheet" href="css/qgis2web.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.css">
+
+  <style>
+    /* CSS tambahan agar sesuai dengan request Anda */
+    .section-padding30 {
+        padding: 60px 0;
+    }
+    .dataTables_wrapper .row:first-child {
+        margin-bottom: 1.5rem;
+    }
+    .table thead th {
+        vertical-align: middle;
+        font-weight: 600;
+    }
+    .table tbody tr td:first-child {
+        text-align: center;
+    }
+    .table a {
+        color: #feb900;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    .table a:hover {
+        text-decoration: underline;
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: UpConstruction
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="services-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">SimBata</h1> <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="sebaran_jembatan.html">Sebaran Jembatan</a></li>
+          <li><a href="jembatan.html">Jembatan</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
+      <div class="container position-relative">
+        <h1>Daftar Jembatan</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Daftar Jembatan</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <div class="categories-area section-padding30">
+      <div class="container">
+        
+        <!-- 
+          Struktur tabel HTML standar. 
+          DataTables akan secara otomatis menambahkan fitur pencarian, pagination, dll. di sekitar tabel ini.
+        -->
+        <table id="jembatanTable" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>No Jembatan</th>
+                    <th>Lintang</th>
+                    <th>Bujur</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <a href="Sayidan.html" target="_blank">
+                            PROF.IR.KRMT. WREKSODININGRAT
+                        </a>
+                    </td>
+                    <td>-7.762399</td>
+                    <td>110.370692</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="#" target="_blank">GAJAH KUNING</a></td>
+                    <td>-7.971131</td>
+                    <td>110.590212</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="#" target="_blank">BENERAN</a></td>
+                    <td>-7.769854</td>
+                    <td>110.468203</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="#" target="_blank">GESIKAN</a></td>
+                    <td>-7.669342</td>
+                    <td>110.329715</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="#" target="_blank">BETENG</a></td>
+                    <td>-7.730319</td>
+                    <td>110.380475</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a href="#" target="_blank">JETISAN</a></td>
+                    <td>-7.777241</td>
+                    <td>110.457816</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><a href="#" target="_blank">GAYAM I</a></td>
+                    <td>-7.778912</td>
+                    <td>110.389534</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><a href="#" target="_blank">PUCUNG</a></td>
+                    <td>-7.690833</td>
+                    <td>110.457222</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><a href="#" target="_blank">MATMAJAN</a></td>
+                    <td>-7.765688</td>
+                    <td>110.407769</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><a href="#" target="_blank">KADISOKO</a></td>
+                    <td>-7.761592</td>
+                    <td>110.451369</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td><a href="#" target="_blank">TAJEM</a></td>
+                    <td>-7.757365</td>
+                    <td>110.428456</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td><a href="#" target="_blank">SAMBIREJO</a></td>
+                    <td>-7.755498</td>
+                    <td>110.505243</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td><a href="#" target="_blank">SETURAN II</a></td>
+                    <td>-7.772845</td>
+                    <td>110.403567</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td><a href="#" target="_blank">SETURAN I</a></td>
+                    <td>-7.773822</td>
+                    <td>110.405519</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td><a href="#" target="_blank">KARANGNONGKO</a></td>
+                    <td>-7.762895</td>
+                    <td>110.418228</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td><a href="#" target="_blank">NOLOGATEN</a></td>
+                    <td>-7.775893</td>
+                    <td>110.409395</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td><a href="#" target="_blank">KARANG ASEM</a></td>
+                    <td>-7.768644</td>
+                    <td>110.399583</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td><a href="#" target="_blank">CANDI GEBANG</a></td>
+                    <td>-7.734892</td>
+                    <td>110.434471</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td><a href="#" target="_blank">TEMPEL</a></td>
+                    <td>-7.682853</td>
+                    <td>110.322479</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td><a href="#" target="_blank">WOTGALEH</a></td>
+                    <td>-7.801533</td>
+                    <td>110.443147</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td><a href="#" target="_blank">GEMAWANG</a></td>
+                    <td>-7.756281</td>
+                    <td>110.354189</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td><a href="#" target="_blank">JETIS BARAN</a></td>
+                    <td>-7.778553</td>
+                    <td>110.463372</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td><a href="#" target="_blank">NGALANGAN</a></td>
+                    <td>-7.712613</td>
+                    <td>110.389274</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td><a href="#" target="_blank">REJOSARI II</a></td>
+                    <td>-7.711893</td>
+                    <td>110.394149</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td><a href="#" target="_blank">REJOSARI I</a></td>
+                    <td>-7.711294</td>
+                    <td>110.395231</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td><a href="#" target="_blank">JATIREJO</a></td>
+                    <td>-7.747558</td>
+                    <td>110.352458</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td><a href="#" target="_blank">NYAMPLUNG</a></td>
+                    <td>-7.803487</td>
+                    <td>110.306561</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td><a href="#" target="_blank">MOLODONO</a></td>
+                    <td>-7.755259</td>
+                    <td>110.237145</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td><a href="#" target="_blank">SALAM</a></td>
+                    <td>-7.798418</td>
+                    <td>110.312152</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td><a href="#" target="_blank">NANGSRI LOR I</a></td>
+                    <td>-7.954278</td>
+                    <td>110.370833</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td><a href="#" target="_blank">NGLARANG</a></td>
+                    <td>-7.781198</td>
+                    <td>110.298216</td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td><a href="#" target="_blank">MULUNGAN</a></td>
+                    <td>-7.741088</td>
+                    <td>110.355194</td>
+                </tr>
+                <tr>
+                    <td>33</td>
+                    <td><a href="#" target="_blank">TEGAL BONDALEM</a></td>
+                    <td>-7.940561</td>
+                    <td>110.457297</td>
+                </tr>
+                <tr>
+                    <td>34</td>
+                    <td><a href="#" target="_blank">KLELES</a></td>
+                    <td>-7.772528</td>
+                    <td>110.276944</td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td><a href="#" target="_blank">KLUMPRIT</a></td>
+                    <td>-7.683056</td>
+                    <td>110.463056</td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td><a href="#" target="_blank">NAMBONGAN</a></td>
+                    <td>-7.716187</td>
+                    <td>110.347318</td>
+                </tr>
+                <tr>
+                    <td>37</td>
+                    <td><a href="#" target="_blank">KAPUKONDO I</a></td>
+                    <td>-7.625348</td>
+                    <td>110.449714</td>
+                </tr>
+                <tr>
+                    <td>38</td>
+                    <td><a href="#" target="_blank">BANYUURIP II</a></td>
+                    <td>-7.780112</td>
+                    <td>110.334789</td>
+                </tr>
+                <tr>
+                    <td>39</td>
+                    <td><a href="#" target="_blank">BANYUURIP I</a></td>
+                    <td>-7.779533</td>
+                    <td>110.335274</td>
+                </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">ADJIS</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Fakultas Teknik, Universitas Gadjah Mada</p>
+            <p>Mlati, Sleman, DI Yogyakarta</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links ms-auto">
+          <h4>Tautan Penting</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sebaran_jembatan.html">Atlas Jembatan</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Fitur Utama</h4>
+          <ul>
+            <li><a href="jembatan_Tes_Sijantan.html">Visualisasi 3D</a></li>
+            <li><a href="jembatan_Tes_Sijantan.html">Potret Jembatan</a></li>
+            <li><a href="jembatan_Tes_Sijantan.html">Data Jembatan</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">ADJIS</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+    <!-- 2. JavaScript yang Dibutuhkan (diletakkan sebelum penutup </body>) -->
+    <!-- jQuery (diperlukan oleh DataTables) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables Core JS -->
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <!-- DataTables Bootstrap 5 JS untuk integrasi -->
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.js"></script>
+
+    <!-- 3. Skrip untuk mengaktifkan DataTables pada tabel Anda -->
+    <script>
+    // Pastikan skrip berjalan setelah dokumen siap
+    $(document).ready(function() {
+        // Targetkan tabel dengan ID 'jembatanTable' dan aktifkan DataTables
+        $('#jembatanTable').DataTable({
+            // Opsi untuk mengubah bahasa menjadi Bahasa Indonesia
+            // agar tulisan seperti "Cari:", "Tampilkan data", dll. sesuai
+            language: {
+                "url": "https://cdn.datatables.net/plug-ins/2.0.8/i18n/id.json"
+            }
+        });
+    });
+    </script>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
